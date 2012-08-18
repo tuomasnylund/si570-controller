@@ -1,0 +1,153 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+-set-section-flags	makefile	/^	-$(OBJCOPY) -j .eeprom --set-section-flags=.eeprom="alloc,load" \\$/;"	m
+ADC_MUX_CURRENT	adc.h	4;"	d
+ADC_MUX_VOLTAGE	adc.h	5;"	d
+ALL_ASFLAGS	makefile	/^ALL_ASFLAGS = -mmcu=$(MCU) -I. -x assembler-with-cpp $(ASFLAGS)$/;"	m
+ALL_CFLAGS	makefile	/^ALL_CFLAGS = -mmcu=$(MCU) -I. $(CFLAGS) $(GENDEPFLAGS)$/;"	m
+ASFLAGS	makefile	/^ASFLAGS = -Wa,-adhlns=$(<:.S=.lst),-gstabs $/;"	m
+ASRC	makefile	/^ASRC = $/;"	m
+AVRDUDE	makefile	/^AVRDUDE = avrdude$/;"	m
+AVRDUDE_FLAGS	makefile	/^AVRDUDE_FLAGS = -p $(MCU) -c $(AVRDUDE_PROGRAMMER)$/;"	m
+AVRDUDE_PORT	makefile	/^AVRDUDE_PORT = com1    # programmer connected to serial device$/;"	m
+AVRDUDE_PROGRAMMER	makefile	/^AVRDUDE_PROGRAMMER = usbtiny$/;"	m
+AVRDUDE_WRITE_FLASH	makefile	/^AVRDUDE_WRITE_FLASH = -U flash:w:$(TARGET).hex$/;"	m
+BAUD_PRESCALE	uart.h	6;"	d
+CC	makefile	/^CC = avr-gcc$/;"	m
+CDEFS	makefile	/^CDEFS =$/;"	m
+CFLAGS	makefile	/^CFLAGS = -g$(DEBUG)$/;"	m
+CINCS	makefile	/^CINCS =$/;"	m
+COFFCONVERT	makefile	/^COFFCONVERT=$(OBJCOPY) --debugging \\$/;"	m
+COPY	makefile	/^COPY = cp$/;"	m
+CSTANDARD	makefile	/^CSTANDARD = -std=gnu99$/;"	m
+DEBUG	makefile	/^DEBUG = dwarf-2$/;"	m
+DIRAVR	makefile	/^DIRAVR = c:\/winavr$/;"	m
+DIRAVRBIN	makefile	/^DIRAVRBIN = $(DIRAVR)\/bin$/;"	m
+DIRAVRUTILS	makefile	/^DIRAVRUTILS = $(DIRAVR)\/utils\/bin$/;"	m
+DIRINC	makefile	/^DIRINC = .$/;"	m
+DIRLIB	makefile	/^DIRLIB = $(DIRAVR)\/avr\/lib$/;"	m
+DIVIDER	pwm_16.c	6;"	d	file:
+ELFSIZE	makefile	/^ELFSIZE = $(SIZE) -A $(TARGET).elf$/;"	m
+EXTMEMOPTS	makefile	/^EXTMEMOPTS =$/;"	m
+EXTRAINCDIRS	makefile	/^EXTRAINCDIRS = $/;"	m
+FORMAT	makefile	/^FORMAT = ihex$/;"	m
+F_CLOCK	main.c	1;"	d	file:
+F_CLOCK	si570.c	1;"	d	file:
+F_CPU	main.c	2;"	d	file:
+F_CPU	si570.c	2;"	d	file:
+F_CPU	uart.h	3;"	d
+GENDEPFLAGS	makefile	/^GENDEPFLAGS = -Wp,-M,-MP,-MT,$(*F).o,-MF,.dep\/$(@F).d$/;"	m
+HEXSIZE	makefile	/^HEXSIZE = $(SIZE) --target=$(FORMAT) $(TARGET).hex$/;"	m
+I2C_H_	i2c.h	6;"	d
+ISR	uart.c	/^ISR(USART_RX_vect){$/;"	f
+ISR	uart.c	/^ISR(USART_TX_vect){$/;"	f
+LDFLAGS	makefile	/^LDFLAGS = -Wl,-Map=$(TARGET).map,--cref$/;"	m
+LED_TEST_BIT	main.c	17;"	d	file:
+LED_TEST_DDR	main.c	16;"	d	file:
+LED_TEST_PORT	main.c	15;"	d	file:
+LST	makefile	/^LST = $(ASRC:.S=.lst) $(SRC:.c=.lst)$/;"	m
+MATH_LIB	makefile	/^MATH_LIB = -lm$/;"	m
+MCU	makefile	/^MCU = atmega88$/;"	m
+MSG_ASSEMBLING	makefile	/^MSG_ASSEMBLING = Assembling:$/;"	m
+MSG_BEGIN	makefile	/^MSG_BEGIN = -------- begin --------$/;"	m
+MSG_CLEANING	makefile	/^MSG_CLEANING = Cleaning project:$/;"	m
+MSG_COFF	makefile	/^MSG_COFF = Converting to AVR COFF:$/;"	m
+MSG_COMPILING	makefile	/^MSG_COMPILING = Compiling:$/;"	m
+MSG_EEPROM	makefile	/^MSG_EEPROM = Creating load file for EEPROM:$/;"	m
+MSG_END	makefile	/^MSG_END = --------  end  --------$/;"	m
+MSG_ERRORS_NONE	makefile	/^MSG_ERRORS_NONE = Errors: none$/;"	m
+MSG_EXTENDED_COFF	makefile	/^MSG_EXTENDED_COFF = Converting to AVR Extended COFF:$/;"	m
+MSG_EXTENDED_LISTING	makefile	/^MSG_EXTENDED_LISTING = Creating Extended Listing:$/;"	m
+MSG_FLASH	makefile	/^MSG_FLASH = Creating load file for Flash:$/;"	m
+MSG_LINKING	makefile	/^MSG_LINKING = Linking:$/;"	m
+MSG_SIZE_AFTER	makefile	/^MSG_SIZE_AFTER = Size after:$/;"	m
+MSG_SIZE_BEFORE	makefile	/^MSG_SIZE_BEFORE = Size before: $/;"	m
+MSG_SYMBOL_TABLE	makefile	/^MSG_SYMBOL_TABLE = Creating Symbol Table:$/;"	m
+NM	makefile	/^NM = avr-nm$/;"	m
+OBJ	makefile	/^OBJ = $(SRC:.c=.o) $(ASRC:.S=.o) $/;"	m
+OBJCOPY	makefile	/^OBJCOPY = avr-objcopy$/;"	m
+OBJDUMP	makefile	/^OBJDUMP = avr-objdump$/;"	m
+OPT	makefile	/^OPT = s$/;"	m
+PRINTF_LIB	makefile	/^PRINTF_LIB = $/;"	m
+PRINTF_LIB_FLOAT	makefile	/^PRINTF_LIB_FLOAT = -Wl,-u,vfprintf -lprintf_flt$/;"	m
+PRINTF_LIB_MIN	makefile	/^PRINTF_LIB_MIN = -Wl,-u,vfprintf -lprintf_min$/;"	m
+PWM_A_BIT	pwm_16.h	10;"	d
+PWM_A_DDR	pwm_16.h	9;"	d
+PWM_A_PORT	pwm_16.h	8;"	d
+PWM_V_BIT	pwm_16.h	6;"	d
+PWM_V_DDR	pwm_16.h	5;"	d
+PWM_V_PORT	pwm_16.h	4;"	d
+REMOVE	makefile	/^REMOVE = rm -f$/;"	m
+RX_LED_BIT	uart.h	10;"	d
+RX_LED_DDR	uart.h	9;"	d
+RX_LED_PORT	uart.h	8;"	d
+SCANF_LIB	makefile	/^SCANF_LIB = $/;"	m
+SCANF_LIB_FLOAT	makefile	/^SCANF_LIB_FLOAT = -Wl,-u,vfscanf -lscanf_flt$/;"	m
+SCANF_LIB_MIN	makefile	/^SCANF_LIB_MIN = -Wl,-u,vfscanf -lscanf_min$/;"	m
+SHELL	makefile	/^SHELL = sh$/;"	m
+SI570_ADDR	si570.h	16;"	d
+SIZE	makefile	/^SIZE = avr-size$/;"	m
+SRC	makefile	/^SRC = $(TARGET).c uart.c i2c.c$/;"	m
+TARGET	makefile	/^TARGET = main$/;"	m
+TWBR_VAL	i2c.h	12;"	d
+UART_RX_BUFFER_SIZE	uart.h	13;"	d
+UART_TX_BUFFER_SIZE	uart.h	14;"	d
+USART_BAUDRATE	uart.h	5;"	d
+WAIT	i2c.c	3;"	d	file:
+_ADC_H_	adc.h	2;"	d
+_PWM_16_H	pwm_16.h	2;"	d
+_SI570_H_	si570.h	2;"	d
+_UART_H_	uart.h	2;"	d
+adc_get_current	adc.c	/^uint16_t adc_get_current(void){$/;"	f	signature:(void)
+adc_get_current	adc.h	/^uint16_t adc_get_current(void);$/;"	p	signature:(void)
+adc_get_voltage	adc.c	/^uint16_t adc_get_voltage(void){$/;"	f	signature:(void)
+adc_get_voltage	adc.h	/^uint16_t adc_get_voltage(void);$/;"	p	signature:(void)
+adc_init	adc.c	/^void adc_init(void){$/;"	f	signature:(void)
+adc_init	adc.h	/^void adc_init(void);$/;"	p	signature:(void)
+adc_set_mux	adc.c	/^static inline void adc_set_mux(uint8_t channel){$/;"	f	file:	signature:(uint8_t channel)
+i2c_init	i2c.c	/^void i2c_init(void){$/;"	f	signature:(void)
+i2c_init	i2c.h	/^void i2c_init(void);$/;"	p	signature:(void)
+i2c_read	i2c.c	/^uint8_t i2c_read(uint8_t dev_addr, uint8_t reg_addr){$/;"	f	signature:(uint8_t dev_addr, uint8_t reg_addr)
+i2c_read	i2c.h	/^uint8_t i2c_read(uint8_t dev_addr, uint8_t reg_addr);$/;"	p	signature:(uint8_t dev_addr, uint8_t reg_addr)
+i2c_read_byte	i2c.c	/^uint8_t i2c_read_byte(void){$/;"	f	signature:(void)
+i2c_read_byte	i2c.h	/^uint8_t i2c_read_byte(void);$/;"	p	signature:(void)
+i2c_send_addr	i2c.c	/^void i2c_send_addr(uint8_t addr){$/;"	f	signature:(uint8_t addr)
+i2c_send_addr	i2c.h	/^void i2c_send_addr(uint8_t addr);$/;"	p	signature:(uint8_t addr)
+i2c_send_byte	i2c.c	/^void i2c_send_byte(uint8_t data){$/;"	f	signature:(uint8_t data)
+i2c_send_byte	i2c.h	/^void i2c_send_byte(uint8_t data);$/;"	p	signature:(uint8_t data)
+i2c_send_start	i2c.c	/^void i2c_send_start(void){$/;"	f	signature:(void)
+i2c_send_start	i2c.h	/^void i2c_send_start(void);$/;"	p	signature:(void)
+i2c_send_stop	i2c.c	/^void i2c_send_stop(void){$/;"	f	signature:(void)
+i2c_send_stop	i2c.h	/^void i2c_send_stop(void);$/;"	p	signature:(void)
+i2c_success	i2c.c	/^uint8_t i2c_success;$/;"	v
+i2c_write	i2c.c	/^void i2c_write(uint8_t dev_addr, uint8_t reg_addr, uint8_t data){$/;"	f	signature:(uint8_t dev_addr, uint8_t reg_addr, uint8_t data)
+i2c_write	i2c.h	/^void i2c_write(uint8_t dev_addr, uint8_t reg_addr, uint8_t data);$/;"	p	signature:(uint8_t dev_addr, uint8_t reg_addr, uint8_t data)
+init	main.c	/^void init(void);$/;"	p	file:	signature:(void)
+init	main.c	/^void init(void){$/;"	f	signature:(void)
+main	main.c	/^int main(void){$/;"	f	signature:(void)
+mystdout	main.c	/^static FILE mystdout = FDEV_SETUP_STREAM($/;"	v	file:
+pwm16_init	pwm_16.c	/^void pwm16_init(void){$/;"	f	signature:(void)
+pwm16_init	pwm_16.h	/^void pwm16_init(void);$/;"	p	signature:(void)
+pwm16_set_amps	pwm_16.c	/^void pwm16_set_amps   (uint16_t milliamps){$/;"	f	signature:(uint16_t milliamps)
+pwm16_set_amps	pwm_16.h	/^void pwm16_set_amps  (uint16_t milliamps);$/;"	p	signature:(uint16_t milliamps)
+pwm16_set_volts	pwm_16.c	/^void pwm16_set_volts(uint16_t millivolts){$/;"	f	signature:(uint16_t millivolts)
+pwm16_set_volts	pwm_16.h	/^void pwm16_set_volts (uint16_t millivolts);$/;"	p	signature:(uint16_t millivolts)
+si570_init	si570.c	/^void si570_init(void);$/;"	p	file:	signature:(void)
+si570_init	si570.h	/^void si570_init(void);$/;"	p	signature:(void)
+si570_read_registers	si570.c	/^void si570_read_registers(void){$/;"	f	signature:(void)
+si57_get_hsdiv	si570.c	/^uint8_t si57_get_hsdiv(void){$/;"	f	signature:(void)
+si57_set_hsdiv	si570.c	/^void si57_set_hsdiv(uint8_t hsdiv){$/;"	f	signature:(uint8_t hsdiv)
+uart_getchar	uart.c	/^int uart_getchar(FILE *stream){$/;"	f	signature:(FILE *stream)
+uart_getchar	uart.h	/^int uart_getchar(FILE *stream);$/;"	p	signature:(FILE *stream)
+uart_init	uart.c	/^void uart_init(void){$/;"	f	signature:(void)
+uart_init	uart.h	/^void uart_init(void);$/;"	p	signature:(void)
+uart_putchar	uart.c	/^int uart_putchar(char c, FILE *stream){$/;"	f	signature:(char c, FILE *stream)
+uart_putchar	uart.h	/^int uart_putchar(char c, FILE *stream);$/;"	p	signature:(char c, FILE *stream)
+uart_rx_buffer	uart.c	/^volatile char    uart_rx_buffer[UART_RX_BUFFER_SIZE];$/;"	v
+uart_rx_buffer_index	uart.c	/^volatile uint8_t uart_rx_buffer_index;$/;"	v
+uart_tx_buffer	uart.c	/^volatile char    uart_tx_buffer[UART_TX_BUFFER_SIZE];$/;"	v
+uart_tx_buffer_index	uart.c	/^volatile uint8_t uart_tx_buffer_index;$/;"	v
