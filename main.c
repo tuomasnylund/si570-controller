@@ -1,22 +1,3 @@
-/*
-* File: main file for si570 example
-* Author: Tuomas Nylund (tuomas.nylund@gmail.com)
-* Website: http://tuomasnylund.fi
-*
-* This program is free software: you can redistribute it and/or modify
-* it under the terms of the GNU General Public License as published by
-* the Free Software Foundation, either version 3 of the License, or
-* (at your option) any later version.
-*
-* This program is distributed in the hope that it will be useful,
-* but WITHOUT ANY WARRANTY; without even the implied warranty of
-* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-* GNU General Public License for more details.
-*
-* You should have received a copy of the GNU General Public License
-* along with this program. If not, see <http://www.gnu.org/licenses/>.
-*
-*/
 #define F_CLOCK  8000000
 #define F_CPU    8000000
 
@@ -59,6 +40,7 @@ static FILE mystdout = FDEV_SETUP_STREAM(
  **********************************************************/
 int main(void){
     char buffer[BUFLEN];
+    char ftoabuf[8];
     double frequency;
 
     init();
@@ -68,6 +50,7 @@ int main(void){
             case 'i':
                 si570_init();
                 break;
+                /*
             case 'p':
                 printf("HS_DIV: %u\n",si570_get_hsdiv());
                 _delay_ms(50);
@@ -75,6 +58,7 @@ int main(void){
                 _delay_ms(50);
                 printf("RFREQ: %lu\n",si570_get_rfreq_truncated());
                 break;
+                */
             case 'r':
                 si570_read_registers();
                 break;
@@ -83,7 +67,8 @@ int main(void){
                 break;
             case 'f':
                 frequency = atof(&(buffer[1]));
-                si570_set_frequency(frequency);
+                si570_set_frequency(4*frequency);
+                puts(dtostrf(frequency,4,4,ftoabuf));
                 break;
         }
     }
